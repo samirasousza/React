@@ -1,0 +1,20 @@
+<html>
+    <head>
+    <title>Questao 3</title>
+    </head>
+
+    <body>
+        <h1>Escreva uma função em JavaScript que realize a conversão de uma temperatura
+            fornecida em graus Fahrenheit (F) para Celsius (C).</h1>
+
+        num: <input type="number" name="num" id="num"><br><br>
+        <button onclick="converter(document.getElementById('num').value)">Converter</button>
+
+        <script>
+            converter = (celsius) => {
+                var fahrenheit = (celsius * 1.8) + 32;
+                document.write(`Celsius: ${celsius}° - Fahrenheit: ${fahrenheit}`);
+            }
+        </script>
+    </body>
+</html>

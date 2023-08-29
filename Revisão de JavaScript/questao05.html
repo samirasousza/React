@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Questao 5</title>
+    </head>
+
+    <body>
+        <center>
+
+        <h1>Escreva uma função que encontre a área e o perímetro de um círculo, de acordo
+            com o raio fornecido.</h1>
+
+        raio: <input type="number" name="raio" id="raio"><br><br>
+        <input type="button" value="calcular área" onclick = "calcularArea()"><br><br>
+        area: <input type="number" name="area" id="area"><br><br>
+        <input type="button" value="calcular perimetro" onclick = "calcularPerimetro()"><br><br>
+        perimetro: <input type="number" name="perimetro" id="perimetro">
+
+        </center>
+
+        <script>
+            calcularArea = () => document.getElementById('area').value = ((document.getElementById('raio').value)**2) * Math.PI;
+
+            calcularPerimetro = () => document.getElementById('perimetro').value = (document.getElementById('raio').value) * 2 * Math.PI;
+        </script>
+
+    </body>
+</html>

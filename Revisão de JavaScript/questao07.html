@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Questao 7</title>
+    </head>
+
+    <body>
+        <center>
+            <h1>Escreva uma função que permita contar o número de vogais contidas em uma string
+                fornecida pelo usuário. Por exemplo, o usuário informa a string “Beterraba”, e a
+                função retorna o número 4 (há 4 vogais nessa palavra)</h1>
+
+            escreva uma string:<br><input type="text" name="palavra" id="palavra"><br><br>
+
+            <input type="button" value="contar" onclick = "contarVogais(document.getElementById('palavra').value)"><br><br>
+            quantidade de vogais:<br><input type="text" name="vogais" id="vogais">
+        </center>
+
+        <script>
+            contarVogais = (palavra) => {
+                palavra = palavra.toLowerCase();
+                var num = 0;
+                for (var i=0; i<palavra.length, i++) {
+                    if (palavra[i] == 'a' || palavra[i] == 'e' || palavra[i] == 'i' || palavra[i] == 'o' || palavra[i] == 'u') {
+                        num++;
+                    }
+                }
+                document.getElementById('vogais').value = num;
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Questao 6</title>
+    </head>
+
+    <body>
+        <center>
+            <h1>Escreva uma função que mostre na tela um número fornecido pelo usuário, porém
+                invertido. Por exemplo, o usuário fornece o número 875 e a função mostra na tela o
+                número 578.</h1>
+
+            numero: <input type="text" name="num" id="num"><br><br>
+
+            <input type="button" value="inverter" onclick = "inverter(document.getElementById('num').value)"><br><br>
+            invertido: <input type="text" name="inverso" id="inverso">
+        </center>
+
+        <script>
+            inverter = (num) => {
+                var inverso = 0;
+                while (num != 0) {
+                    inverso *= 10;
+                    inverso += num%10;
+                    num = Math.trunc(num/10);
+                }
+                document.getElementById('inverso').value = inverso;
+            }
+        </script>
+
+    </body>
+</html>

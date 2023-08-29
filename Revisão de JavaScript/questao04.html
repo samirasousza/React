@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Questao 4</title>
+    </head>
+
+    <body>
+        <h1>Escreva uma função que retorne a área de um triângulo, a partir dos valores de
+            base e altura fornecidos.</h1>
+
+        altura: <input type="number" name="altura" id="altura"><br><br>
+        base: <input type="number" name="base" id="base"><br><br>
+
+        <input type="button" value="calcular" onclick = "calcularArea(document.getElementById('altura').value, document.getElementById('base').value)"><br><br>
+        area: <input type="number" name="area" id="area">
+
+        <script>
+            calcularArea = (altura, base) => document.getElementById('area').value = (base * altura) / 2;
+        </script>
+
+    </body>
+</html>
